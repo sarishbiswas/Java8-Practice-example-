@@ -9,6 +9,17 @@ public class Student {
     private String gender;
     List<String> activities = new ArrayList<>();
 
+    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities, int noOfBooks) {
+        this.name = name;
+        this.gradeLevel = gradeLevel;
+        this.gpa = gpa;
+        this.gender = gender;
+        this.activities = activities;
+        this.noOfBooks = noOfBooks;
+    }
+
+    private int noOfBooks;
+
     public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
         this.name = name;
         this.gradeLevel = gradeLevel;
@@ -76,5 +87,13 @@ public class Student {
                 ", gender='" + gender + '\'' +
                 ", activities=" + activities +
                 '}';
+    }
+
+    public int getNoOfBooks() {
+        return noOfBooks;
+    }
+
+    public void setNoOfBooks(int noOfBooks) {
+        this.noOfBooks = noOfBooks;
     }
 }
