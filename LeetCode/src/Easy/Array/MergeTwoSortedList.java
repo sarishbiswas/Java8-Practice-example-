@@ -1,4 +1,4 @@
-package Easy;
+package Easy.Array;
 
 public class MergeTwoSortedList {
     public static class ListNode {
